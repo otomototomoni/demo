@@ -1,8 +1,12 @@
-package com.example.demo
+package com.example.demo.domain
 
 import jakarta.persistence.*
 import java.time.OffsetDateTime
 
+/*
+    データベースで扱うテーブルを定義している。
+    一つのファイルに一つのEntityが基本なのでこれ以上テーブルは増やさない。増やしたい場合はファイルを増やす。
+ */
 @Entity
 @Table(name = "todo")
 class Todo(
