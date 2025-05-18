@@ -6,7 +6,7 @@ import com.example.demo.service.JankenService
 import org.springframework.web.bind.annotation.*
 
 /*
-
+    じゃんけんのcontroller
  */
 @RestController
 class JankenController(val jankenService:JankenService) {
