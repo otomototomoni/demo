@@ -24,9 +24,9 @@ class Persona (
     //心理的変数。Persona　-　中間テーブル　-　心理的変数テーブル　の中間テーブルの役割を果たす
     @ManyToMany
     @JoinTable(
-        name = "persona_psychological_valiables",
+        name = "persona_psychological_variables",
         joinColumns = [JoinColumn(name = "persona_id")],
         inverseJoinColumns = [JoinColumn(name = "variable_id")]
     )
-    val psychologicalVariables: MutableList<PsychologicalVariables> = mutableListOf()
+    var psychologicalVariables: MutableList<PsychologicalVariables> = mutableListOf()
 )

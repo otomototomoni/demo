@@ -1,5 +1,6 @@
 package com.example.demo.service.persona
 
+import com.example.demo.dto.persona.PersonaIdResponse
 import com.example.demo.dto.persona.PersonaRequest
 
 /*
@@ -7,5 +8,6 @@ import com.example.demo.dto.persona.PersonaRequest
     このinterfaceにあるメソッドをcontrollerで実行する
  */
 interface PersonaService {
-    fun personaAdd(request: PersonaRequest)
+    fun personaNewEntry():PersonaIdResponse
+    fun personaOverWrite(id:Long,request: PersonaRequest)
 }

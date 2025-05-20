@@ -6,7 +6,7 @@ import jakarta.persistence.*
     ペルソナの心理的変数に関するテーブル
  */
 @Entity
-@Table(name = "pcychorogicals")
+@Table(name = "psychological_variables")
 class PsychologicalVariables (
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
