@@ -28,5 +28,5 @@ class Persona (
         joinColumns = [JoinColumn(name = "persona_id")],
         inverseJoinColumns = [JoinColumn(name = "variable_id")]
     )
-    val variables: MutableList<PsychologicalVariables> = mutableListOf()
+    val psychologicalVariables: MutableList<PsychologicalVariables> = mutableListOf()
 )
